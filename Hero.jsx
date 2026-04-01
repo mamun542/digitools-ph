@@ -1,0 +1,29 @@
+import React from 'react';
+import heroImg from '../../../assets/banner.png';
+
+const Hero = () => {
+    return (
+        <div className='container mx-auto flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between mt-10 p-4 md:p-0'>
+            <div className='space-y-4 md:w-[50%]'>
+                <div className='py-1 px-4 bg-[#4F39F630] rounded-full w-fit'>
+                    <p className='text-[#9514FA]'>New Ai-Powered Tools Available</p>
+                </div>
+                <h2 className='text-6xl font-semibold'>Supercharge Your Digital Workflow</h2>
+                <p className='text-gray-500'>
+                    Access premium AI tools, design assets, templates, and productivity
+                    software—all in one place. Start creating faster today.
+                </p>
+                <div className='space-x-2'>
+                    <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Explore Products</button>
+                    <button className='btn btn-primary btn-outline rounded-full'>Watch Demo</button>
+                </div>
+            </div>
+
+            <div>
+                <img src={heroImg} alt="" className='shadow-xl'/>
+            </div>
+        </div>
+    );
+};
+
+export default Hero;
